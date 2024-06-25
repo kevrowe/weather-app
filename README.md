@@ -11,6 +11,8 @@ In this task, you will build a simple Weather App using React and JavaScript. Yo
 3. Display a 5-day weather forecas
 4. Handle errors and edge cases (e.g., API errors, no data found)
 5. Style the app using CSS
+6. Demonstration interface layout for inspiration:
+<img width="665" alt="Screenshot 2024-06-25 at 1 24 22 PM" src="https://github.com/kevrowe/weather-app/assets/1856418/351fb728-a373-46c3-8338-a5d920ea9ad1">
 
 ## Task Constraints
 
