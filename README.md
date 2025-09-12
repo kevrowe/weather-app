@@ -9,9 +9,10 @@ In this task, you will build a simple Weather App using React and JavaScript. Yo
 1. Use the OpenWeatherMap API (or a similar public API) to fetch weather data for Singapore (Lat, Long provided)
 2. Display detail view for the current weather conditions (temperature low and high, humidity, wind speed, precipitation, icon)
 3. Display a 5-day weather forecast (temperature high and low, precipitation, icon)
-4. Allow user to select each of the 5 days to populate the detail view
-5. Handle errors and edge cases (e.g., API errors, no data found)
-6. Style the app using CSS
+4. Display the weather forecast for 12pm (noon) for each day
+5. Allow user to select each of the 5 days to populate the detail view
+6. Handle errors and edge cases (e.g., API errors, no data found)
+7. Style the app using CSS
 
 ```
 Layout:
@@ -51,6 +52,10 @@ Example UI
 
 OpenWeatherMap API documentation: 5 day weather forecast 
 https://openweathermap.org/forecast5
+
+### 5 day forecast
+
+The `forecast5` endpoint will return metadata about the location, e.g. city name, and a `list` of weather data objects in 3 hour intervals.
 
 Key values from response:
 
