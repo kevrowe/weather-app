@@ -53,6 +53,9 @@ Example UI
 OpenWeatherMap API documentation: 5 day weather forecast 
 https://openweathermap.org/forecast5
 
+Icons can be rendered by using the `list[].weather[].icon` value in this URL
+https://openweathermap.org/img/wn/[weather-icon]@2x.png
+
 ### 5 day forecast
 
 The `forecast5` endpoint will return metadata about the location, e.g. city name, and a `list` of weather data objects in 3 hour intervals.
