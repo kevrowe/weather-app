@@ -50,9 +50,6 @@ Example UI
 
 ## API Information
 
-OpenWeatherMap API documentation: 5 day weather forecast 
-https://openweathermap.org/forecast5
-
 Icons can be rendered by using the `list[].weather[].icon` value in this URL
 https://openweathermap.org/img/wn/[weather-icon]@2x.png
 
