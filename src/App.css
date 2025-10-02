@@ -1,12 +1,142 @@
 #root {
   margin: 0 auto;
   padding: 2rem;
+  max-width: 1200px;
 }
 
-.card {
-  padding: 2em;
+.app {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-.read-the-docs {
-  color: #888;
+.app h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.loading,
+.error {
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+/* Weather Detail Component */
+.weather-detail {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.weather-detail .icon img {
+  width: 120px;
+  height: 120px;
+}
+
+.weather-detail .details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.weather-detail .detail-item {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.weather-detail .label {
+  font-weight: 600;
+  min-width: 120px;
+  text-align: left;
+}
+
+.weather-detail .value {
+  font-weight: 400;
+}
+
+/* Day Selector Component */
+.day-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.day-card:hover {
+  background: #e0e0e0;
+  transform: translateY(-4px);
+}
+
+.day-card.selected {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: translateY(-4px);
+}
+
+.day-card .day-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.day-card img {
+  width: 64px;
+  height: 64px;
+  margin: 0.5rem 0;
+}
+
+.day-card .temp-range {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.day-card .temp-range .low {
+  color: #666;
+}
+
+.day-card.selected .temp-range .low {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.day-card .temp-range .high {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .weather-detail {
+    flex-direction: column;
+  }
+
+  .day-selector {
+    flex-wrap: wrap;
+  }
+
+  .day-card {
+    min-width: 80px;
+  }
 }
